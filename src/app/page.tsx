@@ -7,7 +7,6 @@ const Home = () => {
       <h1>Home</h1>
       <br />
       <CounterComp />
-      <br />
       <Input/>
     </div>
   )
