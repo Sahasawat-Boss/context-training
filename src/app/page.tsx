@@ -1,7 +1,7 @@
-import CounterComp from "./components/Counter"
-import Input from "./components/Input"
-import Toggle from "./components/OnOff"
-
+import CounterComp from "./components/ReactComps/Counter"
+import Input from "./components/ReactComps/Input"
+import Toggle from "./components/ReactComps/OnOff"
+import TodoList from "./components/ReactComps/Todo"
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <CounterComp />
       <Input />
       <Toggle />
-
+      <TodoList/>
     </div>
   )
 }

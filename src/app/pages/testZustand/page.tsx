@@ -1,4 +1,5 @@
 import CounterZ from "@/app/components/comp-Zustand/CouterZ"
+import InputSimpleZComp from "@/app/components/comp-Zustand/SimpleInputZ"
 import UserZ from "@/app/components/comp-Zustand/UserZ"
 
 const ZustandPage = () => {
@@ -9,6 +10,7 @@ const ZustandPage = () => {
             <div>
                 <CounterZ />
                 <UserZ />
+                <InputSimpleZComp/>
             </div>
         </main>
     )
