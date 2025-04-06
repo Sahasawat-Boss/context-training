@@ -7,6 +7,7 @@ const Nav = () => {
             <div className="flex text-lg gap-4">
                 <Link href={'/'}>Home |</Link>
                 <Link href={'../pages/testcontext'}>Test Context |</Link>
+                <Link href={'../pages/testZustand'}>Test Zustand |</Link>
             </div>
         </nav>
     )
