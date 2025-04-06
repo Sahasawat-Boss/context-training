@@ -2,6 +2,7 @@ import CounterComp from "./components/Counter"
 import Input from "./components/Input"
 import Toggle from "./components/OnOff"
 
+
 const Home = () => {
   return (
     <div className="p-4">
@@ -10,6 +11,7 @@ const Home = () => {
       <CounterComp />
       <Input />
       <Toggle />
+
     </div>
   )
 }
