@@ -7,7 +7,7 @@ const CounterComp = () => {
 
     return (
         <div className="border">
-            <h1 className="text-xl font-semibold ">Counter Comps</h1>
+            <h1 className="text-xl font-bold ">Counter Comps</h1>
             <p>Count: {counter}</p>
 
             <button onClick={() => setCounter(counter + 1)} className="btn">increase +</button>

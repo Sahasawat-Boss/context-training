@@ -7,7 +7,7 @@ const Input = () => {
 
     return (
         <div className="border">
-            <h1>Input</h1>
+            <h1 className="text-xl font-bold">Input</h1>
             <input type="text" className="border p-1" placeholder="Type Here"
                 value={text} onChange={(e) => setText(e.target.value)} />
 
