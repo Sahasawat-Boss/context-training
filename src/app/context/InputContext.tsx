@@ -2,16 +2,16 @@
 
 import { createContext, useContext, useState, ReactNode } from 'react';
 
-const CounterContext = createContext<any>(null);
+const InputFromCTX = createContext<any>(null);
 
-export const CounterProvider = ({ children }: { children: ReactNode }) => {
-    const [count, setCount] = useState(0);
+export const InputProvider = ({ children }: { children: ReactNode }) => {
+    const [text, setText] = useState('');
 
     return (
-        <CounterContext.Provider value={{ count, setCount }}>
+        <InputFromCTX.Provider value={{ text, setText }}>
             {children}
-        </CounterContext.Provider>
+        </InputFromCTX.Provider>
     );
 };
 
-export const useCounter = () => useContext(CounterContext);
+export const useInputFromCTX = () => useContext(InputFromCTX);

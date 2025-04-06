@@ -1,4 +1,5 @@
 'use client';
+
 import { useCounter } from "../../context/CounterContext";
 
 const CounterContext = () => {
@@ -9,8 +10,8 @@ const CounterContext = () => {
             <h1></h1>
             <p>Count: {count}</p>
             <div className="flex gap-3">
-                <button onClick={() => setCount(count + 1)}>Increase</button>
-                <button onClick={() => setCount(0)}>Reset</button>
+                <button onClick={() => setCount(count + 1)} className="btn">Increase</button>
+                <button onClick={() => setCount(0)} className="btn">Reset</button>
             </div>
         </div>
     );
