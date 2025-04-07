@@ -5,6 +5,8 @@ import Nav from "./components/Nav";
 
 import { CounterProvider } from "./context/CounterContext";
 import { InputProvider } from "./context/InputContext";
+import { InputProvider2 } from "./context/InputStore";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +33,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <InputProvider>
-          <CounterProvider>
-            <Nav />
-            {children}
-          </CounterProvider>
-        </InputProvider>
+        <InputProvider2>
+          <InputProvider>
+            <CounterProvider>
+              <Nav />
+              {children}
+            </CounterProvider>
+          </InputProvider>
+        </InputProvider2>
       </body>
     </html>
   );
