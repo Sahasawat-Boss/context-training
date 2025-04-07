@@ -18,3 +18,16 @@ const CounterComp = () => {
 }
 
 export default CounterComp
+
+
+// const [count, setCount] = useState(50);
+// const countUp = () => setCount(count + 1);
+// const countDown = () => setCount(count - 1);
+
+// return (
+//     <section>
+//         <button onClick={countUp} className="border rounded-full px-2">Count +</button>
+//         <button onClick={countDown} className="border rounded-full px-2">Count -</button>
+//         <p>Count: {count}</p>
+//     </section>
+// )
